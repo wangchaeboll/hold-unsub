@@ -1,0 +1,62 @@
+.container{
+    
+    width: 250px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    user-select: none;
+}
+
+button.start{
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    transition: all 0.15s ease-in
+}
+
+h3{
+    padding: 8px;
+}
+
+button.start:hover{
+    box-shadow: 2.5px 2.5px hsl(0, 0%, 80%);
+    transform: scale(1.05);
+    font-weight: bold;
+    
+}
+
+.style{
+    width: 250px;
+    height: 20px;
+    text-align: center;
+}
+
+.step{
+    text-align: left;
+}
+
+.step ol {
+    padding-left: 25px; /* Adjust the left padding for the numbers */
+}
+
+.step ol i {
+    color: hsl(0, 100%, 40%);
+}
+
+.top-margin{
+    margin-top: 25px;
+}
+.i {
+    color: hsl(0, 100%, 40%);
+}
+
+.hilang{
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    display: none
+}
