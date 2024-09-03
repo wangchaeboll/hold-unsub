@@ -7,31 +7,22 @@ window.addEventListener('load', function() {
     console.log("Window loaded");
     const iya = document.querySelector("#content > #guide #contentContainer > #guide-wrapper > #guide-content > #guide-inner-content > #guide-renderer > #sections > ytd-guide-section-renderer:nth-child(2) > #items");
     const ini = document.querySelector("#content > #guide #contentContainer > #guide-wrapper > #guide-content > #guide-inner-content > #guide-renderer > #sections > ytd-guide-section-renderer:nth-child(2) > #items > :nth-child(1)");
-    document.querySelector("#masthead > #container > #start > #guide-button").addEventListener("contextmenu", (e) => {
-        e.preventDefault()
-    })
-    
-    
-    // ini.addEventListener("contextmenu", (e) => {
-    //     e.preventDefault()
-    //     console.log("hello")
-    // })
-    
-    if (iya){
-        console.log("process cantuman bermula")
-        const element = iya.querySelectorAll("ytd-guide-entry-renderer")
-        element.forEach(elem => {
-            elem.classList.add("tambah")
+    const hamburger = document.querySelector("#masthead > #container > #start > #guide-button")
+    const hamburg = document.querySelector("#masthead")
+
+    if(hamburg && hamburg.hasAttribute("guide-persistent-and-visible")){
+        console.log("side panel awak terbuka")
+        hamburg.addEventListener("contextmenu", (e)=> {
+            e.preventDefault();
+            console.log("hello")
         })
-
-        console.log("pencantuman skrip berjaya")
-        console.log(element)
-    }else{
-        alert("Awak kene tekan dulu side panel")
-        console.log("gagal untuk dicantumkan skrip")
+    }else if(hamburg){
+        console.log("side panel anda tidak terbuka")
     }
+    else{
 
-    
+        this.alert("Kami gagal untuk menyambung dengan youtube, sila refresh. ")
+    }
 
 });
 
