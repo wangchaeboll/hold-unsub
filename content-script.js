@@ -1,7 +1,7 @@
-// window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     
-//     console.log("boleh tak?")
-// });
+    console.log("boleh tak?")
+});
 
 window.addEventListener('load', function() {
     console.log("Window loaded");
@@ -41,3 +41,28 @@ console.log("bolehke?")
 //     e.preventDefault();
 //     console.log("hello")
 // })
+hello.addEventListener("mouseover", (e) => {
+    document.querySelector("#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div.page-header-view-model-wiz__page-header-headline-info > yt-flexible-actions-view-model > div > div > yt-subscribe-button-view-model > yt-animated-action > div.animated-action__content-with-background > div.yt-subscribe-button-view-model-wiz__container > button").style.background = "red";
+})
+
+hello.addEventListener("mouseout", (e) => {
+    document.querySelector("#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div.page-header-view-model-wiz__page-header-headline-info > yt-flexible-actions-view-model > div > div > yt-subscribe-button-view-model > yt-animated-action > div.animated-action__content-with-background > div.yt-subscribe-button-view-model-wiz__container > button").style.background = "black";
+})
+const hello = document.querySelector("#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div.page-header-view-model-wiz__page-header-headline-info > yt-flexible-actions-view-model > div > div > yt-subscribe-button-view-model > yt-animated-action > div.animated-action__content-with-background > div.yt-subscribe-button-view-model-wiz__container > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill")
+
+
+
+
+const execute = () => {
+    setTimeout(() => { 
+        const satu = document.querySelector("#page-header > yt-page-header-renderer > yt-page-header-view-model > div > div.page-header-view-model-wiz__page-header-headline-info > yt-flexible-actions-view-model > div > div > yt-subscribe-button-view-model > yt-animated-action > div.animated-action__content-with-background > div.yt-subscribe-button-view-model-wiz__container > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill").click()
+        setTimeout(() => { 
+            const dua = document.querySelector("#contentWrapper > yt-sheet-view-model > yt-contextual-sheet-layout > div.yt-contextual-sheet-layout-wiz__content-container > yt-list-view-model > yt-list-item-view-model:nth-child(4) > div").click()
+
+            setTimeout(() => { 
+                const tiga = document.querySelector("#confirm-button > yt-button-shape > button > yt-touch-feedback-shape > div > div.yt-spec-touch-feedback-shape__fill").click()
+
+            },2000)
+        },2000)
+    },2000)
+}
